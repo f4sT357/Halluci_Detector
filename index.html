@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ハルシディテクター - Hallucination Detector</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="background-elements">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <main class="container">
+        <header>
+            <h1>Halluci-Detector</h1>
+            <p>LLMや議論の相手の「ハルシネーション（幻覚・妄想）」を浮き彫りにするフレーズ集。<br>ワンクリックでコピーして使えます。</p>
+        </header>
+
+        <div class="categories-wrapper">
+            <!-- 根拠・ソース系 -->
+            <section class="category-card">
+                <h2>根拠・ソース系</h2>
+                <div class="phrase-grid">
+                    <button class="phrase-btn" data-text="それなんかソースあるんすか？">
+                        <span class="text">それなんかソースあるんすか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="それってなんかデータとかあるんすか？">
+                        <span class="text">それってなんかデータとかあるんすか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="どこ情報ですか？">
+                        <span class="text">どこ情報ですか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="一次ソース見ました？">
+                        <span class="text">一次ソース見ました？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- 断定・感想系 -->
+            <section class="category-card">
+                <h2>断定・感想系</h2>
+                <div class="phrase-grid">
+                    <button class="phrase-btn" data-text="それってあなたの感想ですよね？">
+                        <span class="text">それってあなたの感想ですよね？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="なんとなくそう思ってるだけじゃないですか？">
+                        <span class="text">なんとなくそう思ってるだけじゃないですか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="印象論じゃないですか？">
+                        <span class="text">印象論じゃないですか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- 前提崩し系 -->
+            <section class="category-card">
+                <h2>前提崩し系</h2>
+                <div class="phrase-grid">
+                    <button class="phrase-btn" data-text="その前提っておかしくないですか？">
+                        <span class="text">その前提っておかしくないですか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="それって本当に成立してますか？">
+                        <span class="text">それって本当に成立してますか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="条件が違ったら話変わりますよね？">
+                        <span class="text">条件が違ったら話変わりますよね？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                </div>
+            </section>
+
+            <!-- 論理系 -->
+            <section class="category-card">
+                <h2>論理系</h2>
+                <div class="phrase-grid">
+                    <button class="phrase-btn" data-text="因果関係と相関関係混同してません？">
+                        <span class="text">因果関係と相関関係混同してません？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                    <button class="phrase-btn" data-text="それ別の原因じゃないですか？">
+                        <span class="text">それ別の原因じゃないですか？</span>
+                        <span class="icon-copy"></span>
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
